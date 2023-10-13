@@ -81,7 +81,7 @@ def tap_three():
         for depart in depart_dict:
             file_writer.writerow(
                 [depart,
-                 depart_dict[depart],
+                 depart_dict[depart]["число сотрудников"],
                  f'''{depart_dict[depart]['мин. з/п']} - мин.
                  {depart_dict[depart]['макс. з/п']} - макс.''',
                  round(depart_dict[depart]['сумма з/п'] /
